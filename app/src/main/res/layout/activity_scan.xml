@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.noman.mobiledevnoman.ScanActivity">
+
+    <Button
+        android:text="SCAN DATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009688"
+        android:id="@+id/btnScanData"
+        android:layout_below="@+id/editSliderUrl"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textUri|textPersonName"
+        android:text="http://192.168.0.15:8081/MobileAssignment/Scan"
+        android:textColor="#009688"
+        android:backgroundTint="#009688"
+        android:ems="10"
+        android:id="@+id/editSliderUrl"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sensor Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textDataName"
+        android:layout_below="@+id/btnScanData"
+        android:layout_toStartOf="@+id/btnScanData" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDataName"
+        android:layout_alignStart="@+id/textDataName"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textNameData" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textNameData"
+        android:layout_alignStart="@+id/textDataValue"
+        android:id="@+id/textValueData" />
+
+    <TextView
+        android:text="Sensor Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDataValue"
+        android:layout_alignBaseline="@+id/textDataName"
+        android:layout_alignBottom="@+id/textDataName"
+        android:layout_toEndOf="@+id/btnScanData" />
+
+    <TextView
+        android:text="STATUS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDataStatus"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
